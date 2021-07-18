@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-background: #191622;
+  --clock-background: #41414d;
+  --light-background: #E1E1E6;
+  --border-clock: #78d1e1;
+}
+
+.container {
+  background: var(--gray-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(circle, #131520 0%, #191622 65%);
+}
+
+.container h1 {
+  /* margin: 96px 150px 20px; */
+  font: 600;
+  font-family: Roboto, sans-serif;
+  color: var(--light-background);
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 1.25rem;
+}
+
+.container small {
+  font-family: Overpass, sans-serif;
+  color: var(--light-background);
+  font-size: 1.7rem;
+}
+
+li {
+  /* background-color: var(--clock-background); */
+  /* border-radius: 1.2rem; */
+  /* padding: .1rem .8rem; */
+  margin-bottom: 1.2rem;
+}
+
+.container .labels {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-direction: column; */
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: .3rem .3rem;
+  /* background-color: var(--clock-background); */
+  border-radius: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.active-label {
+  color: #44475A;
+  background-color: var(--border-clock);
+  font-weight: bold;
+  transition: 1.2s;
+}
+
+
+/* The structure design of timer countdown*/
+
+.timer-container {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 7.5rem;
+  font-family: Roboto, sans-serif;
+  color: var(--light-background);
+  background: var(--clock-background);
+  font-size: 2.8rem;
+  font-weight: lighter;
+  box-shadow: 1rem 0.8rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+button {
+  color: var(--light-background);
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 3rem;
+  margin: 0.2rem;
+  background: var(--clock-background);
+  min-width: 80px;
+  cursor: pointer;
+}
+
+p {
+  margin-left: 2rem;
+  padding: 1.8rem 0 0.25rem 2rem;
+  border-left: 1px solid var(--clock-background);
+}
+
+Button.active {
+  color: var(--light-background);
+  background-color: var(--border-clock);
+  border: 1px solid var(--light-background);
+}
