@@ -52,7 +52,7 @@ li {
   text-transform: uppercase;
   font-size: 0.8rem;
   padding: .3rem .3rem;
-  /* background-color: var(--clock-background); */
+  background-color: var(--clock-background);
   border-radius: 1.5rem;
   margin-bottom: 1.2rem;
 }
@@ -118,4 +118,36 @@ Button.active {
   color: var(--light-background);
   background-color: var(--border-clock);
   border: 1px solid var(--light-background);
+}
+
+.form-container {
+  margin-top: 2.4rem;
+  text-align: center;
+  height: 440px;
+  width: 320px;
+  border-radius: 2rem;
+  background-color: var(--clock-background);
+}
+
+.form-container button {
+  background-color: var(--border-clock);
+  color: var(--gray-background);
+  font-weight: bold;
+}
+
+.input-wrapper {
+  margin: 1.5rem;
+}
+
+.input-wrapper input {
+  height: 30px;
+  width: 240px;
+  padding: 2rem;
+  background-color: var(--gray-background);
+  color: var(--light-background);
+  border: none;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  text-align: center;
+  font-size: 0.8rem;
 }

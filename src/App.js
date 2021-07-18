@@ -4,7 +4,7 @@ import Button from './components/Button';
 import SetPomodoro from "./components/SetPomodoro";
 import { SettingsContext } from "./context/SettingsContext";
 
-import { FiPause, FiPlay } from 'react-icons/fi';
+import { FiPause, FiPlay, FiSettings } from 'react-icons/fi';
 
 function App() {
   const {
@@ -53,14 +53,14 @@ function App() {
           />
         </div>
         <ul className="labels">
-          <li className="up">
+          <li>
             <Button 
               title="Work"
               activeClass={executing.active === 'work' ? 'active-label' : undefined}
               _callback={() => setCurrentTimer('work')}
             />
           </li>
-          <li className="up">
+          <li>
             <Button 
               title="Break"
               activeClass={executing.active === 'short' ? 'active-label' : undefined}
@@ -76,7 +76,7 @@ function App() {
           </li>
           <li>
             <Button 
-              title="Settings" 
+              title={<FiSettings size={28} />} 
               _callback={SettingBtn} 
             />
           </li>
