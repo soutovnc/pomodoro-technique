@@ -19,7 +19,7 @@ function App() {
     updateExecute
   } = useContext(SettingsContext)
 
-  useEffect(() => {updateExecute(executing)}, [executing, startAnimate])
+  useEffect(() => {updateExecute(executing)})
 
   return (
     <div className="container">
