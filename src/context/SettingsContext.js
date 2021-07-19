@@ -77,7 +77,6 @@ function SettingsContextProvider(props) {
         pauseTimer,
         SettingBtn,
         setCurrentTimer,
-        updateExecute,
         children
     }}>
       {props.children}
